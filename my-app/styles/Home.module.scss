@@ -1,0 +1,42 @@
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+
+    .heading {
+        width: 50%;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+    }
+
+    .img {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        flex-direction: column-reverse;
+        .heading {
+            width: 100%;
+        }
+        .img {
+            width: 100%;
+        }
+    }
+}
